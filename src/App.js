@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { SocialIcon } from "react-social-icons";
 import Main from "./components/main/Main";
 
-function App() {
+function App(){
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
   const whyMeRef = useRef(null);
