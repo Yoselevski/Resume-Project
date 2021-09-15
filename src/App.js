@@ -42,12 +42,11 @@ function App(){
         style={{ backgroundColor: "green", zIndex: '-1' }}
         content="Why me"
       />
-
       <Main
         Ref={projectsRef}
         style={{ backgroundColor: "red", zIndex: '-1'}}
         content= {
-          <div>
+          <div style={{}}>
             <div className={ProjectsStyle.projectsHeadline}>Favorite Projects</div>
             <div className={ProjectsStyle.projectsContainer}>
               <ul className={ProjectsStyle.ulCards}>
