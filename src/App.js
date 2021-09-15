@@ -3,6 +3,8 @@ import Navbar from "./components/navbar/Navbar";
 import { useRef } from "react";
 import { SocialIcon } from "react-social-icons";
 import Main from "./components/main/Main";
+import ProjectsCard from "./components/projects_card/ProjectsCard";
+import ProjectsStyle from "./Projects.module.css"
 
 function App(){
   const projectsRef = useRef(null);
@@ -38,13 +40,25 @@ function App(){
       <Main
         Ref={whyMeRef}
         style={{ backgroundColor: "green" }}
-        content="Why Me"
+        content="Why me"
       />
 
       <Main
         Ref={projectsRef}
         style={{ backgroundColor: "red" }}
-        content="Project"
+        content= {
+          <div>
+            <div className={ProjectsStyle.projectsHeadline}>Favorite Projects</div>
+            <div className={ProjectsStyle.projectsContainer}>
+              <ul className={ProjectsStyle.ulCards}>
+                <li className={ProjectsStyle.liCards}><ProjectsCard /></li>
+                <li className={ProjectsStyle.liCards}><ProjectsCard /></li>
+                <li className={ProjectsStyle.liCards}><ProjectsCard /></li>
+              </ul>
+            </div>
+            <div className={ProjectsStyle.projectsFooter}>This is footer</div>
+          </div> 
+      }
       />
 
       <footer className={AppStyle.footer}>
