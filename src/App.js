@@ -39,13 +39,13 @@ function App(){
       />
       <Main
         Ref={whyMeRef}
-        style={{ backgroundColor: "green" }}
+        style={{ backgroundColor: "green", zIndex: '-1' }}
         content="Why me"
       />
 
       <Main
         Ref={projectsRef}
-        style={{ backgroundColor: "red" }}
+        style={{ backgroundColor: "red", zIndex: '-1'}}
         content= {
           <div>
             <div className={ProjectsStyle.projectsHeadline}>Favorite Projects</div>

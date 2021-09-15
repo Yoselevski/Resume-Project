@@ -6,7 +6,7 @@ const Main = ({Ref , style , content}) => {
       className={MainStyle.container}
       style={style}
     >
-      <div>{content}</div>
+      {content}
     </div>
   );
 };
