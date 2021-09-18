@@ -48,7 +48,6 @@ import ItemPic from '../pictures/ItemPic';
             <section className={FooterStyle.ItemPic}>
                 <ul>{Signs}</ul>
             </section>
-            
           );
 };
 
