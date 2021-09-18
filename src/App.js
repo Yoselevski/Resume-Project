@@ -23,6 +23,7 @@ function App() {
     });
   };
 
+  const socialIconStyle = { float: "right", width:"40px", height:"40px", marginTop:"4px", margin:"3px" };
   return (
     <div>
       <Navbar scrolTo={scrolToView} />
@@ -52,17 +53,29 @@ function App() {
           Copyright © 2021. All Rights Reserved
         </div>
         <ul className={AppStyle.ul}>
-          <li className={AppStyle.li} title="to github">
+          <li className={AppStyle.li} title="to my github">
             <SocialIcon
+              bgColor="snow"
+              fgColor="black"
               url="https://github.com/saharc576?tab=repositories"
-              style={{ float: "right" }}
+              style={socialIconStyle}
             />
           </li>
-          <li className={AppStyle.li} title="to linkdin">
+          <li className={AppStyle.li} title="to my linkdin">
             <SocialIcon
+              fgColor="snow"
               url="https://www.linkedin.com/in/sahar-cohen-307020207/"
-              style={{ float: "right" }}
+              style={socialIconStyle}
             />
+          </li>
+          <li className={AppStyle.li} title="send email">
+          <a href="mailto:sahar576cohen@gmail.com">
+            <SocialIcon
+              fgColor="snow"
+              network="mailto"
+              style={socialIconStyle}
+            />
+            </a>
           </li>
         </ul>
       </footer>
