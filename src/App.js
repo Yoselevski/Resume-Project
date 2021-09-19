@@ -1,8 +1,9 @@
 import AppStyle from "./App.module.css";
 import Navbar from "./components/navbar/Navbar";
 import { useRef } from "react";
-import { SocialIcon } from "react-social-icons";
 import Main from "./components/main/Main";
+import About from "./components/about/About";
+import MainFooter from "./main_footer/MainFooter";
 
 function App() {
   const projectsRef = useRef(null);
@@ -23,7 +24,6 @@ function App() {
     });
   };
 
-  const socialIconStyle = { float: "right", width:"40px", height:"40px", marginTop:"4px", margin:"3px" };
   return (
     <div>
       <Navbar scrolTo={scrolToView} />
@@ -34,7 +34,7 @@ function App() {
             "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/introBackground.jpg?alt=media&token=5ec81f2f-4add-476c-a524-b11d99245c12)",
           zIndex: "-1",
         }}
-        content="Picture of us + Flip card"
+        content={<About/>}
       />
       <Main
         Ref={whyMeRef}
@@ -47,38 +47,8 @@ function App() {
         style={{ backgroundColor: "red" }}
         content="Project"
       />
-
-      <footer className={AppStyle.footer}>
-        <div className={AppStyle.footerContent}>
-          Copyright © 2021. All Rights Reserved
-        </div>
-        <ul className={AppStyle.ul}>
-          <li className={AppStyle.li} title="to my github">
-            <SocialIcon
-              bgColor="snow"
-              fgColor="black"
-              url="https://github.com/saharc576?tab=repositories"
-              style={socialIconStyle}
-            />
-          </li>
-          <li className={AppStyle.li} title="to my linkdin">
-            <SocialIcon
-              fgColor="snow"
-              url="https://www.linkedin.com/in/sahar-cohen-307020207/"
-              style={socialIconStyle}
-            />
-          </li>
-          <li className={AppStyle.li} title="send email">
-          <a href="mailto:sahar576cohen@gmail.com">
-            <SocialIcon
-              fgColor="snow"
-              network="mailto"
-              style={socialIconStyle}
-            />
-            </a>
-          </li>
-        </ul>
-      </footer>
+    <MainFooter />
+      
     </div>
   );
 }
