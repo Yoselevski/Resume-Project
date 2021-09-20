@@ -1,7 +1,15 @@
 import AboutStyle from "./About.module.css";
 import DownloadBtn from "./DownloadBtn";
+import {SocialIcon} from "react-social-icons";
+import {Linking} from 'react-native';
+
 
 const About = () => {
+
+    const contact = () => {
+        Linking.openURL("https://api.whatsapp.com/send?phone=972537171929");
+    }
+
     return (
         <div>
 
@@ -27,6 +35,15 @@ const About = () => {
                             AboutStyle.image
                         }/>
                 </div>
+                <button className={
+                        AboutStyle.whatsapp
+                    }
+                    onClick={contact}>
+                    <strong>Contact me</strong>
+                    {
+                    < SocialIcon
+                    fgColor = "snow" url = "https://api.whatsapp.com/send?phone=972537171929" style = {{zIndex:"-10", float: "left"}}/>
+                }</button>
             </span>
             <span id="split-screen-right"
                 className={
@@ -35,15 +52,10 @@ const About = () => {
                 <div id="info-container">
                     <p className={
                         AboutStyle.info
-                    }>sdfas AppStyleasdf 
-                                                                                    AppStyleasdfsd
-                                                                                    sdf
-                                                                                    AppStyleasdf
-                                                                                    sdfasdfasdf
-                                                                                    AppStyleasdfasdfasdf
-                                                                                    AppStyleasdfasdf
+                    }>Third year student, BSC in Computer Sciences. Looking for an entry level position as a developer, in which I
+                    can both contribute and evolve professionally.
+                    
                     </p>
-
                 </div>
             </span>
             <span id="footer-buttons"
@@ -51,18 +63,9 @@ const About = () => {
                     AboutStyle.footerContainer
             }>
                 <DownloadBtn/>
-                <button className={
-                        AboutStyle.button
-                    }
-                    onClick={
-                        () => console.log("hello")
-                }>BTN2</button>
-                <button className={
-                    AboutStyle.button
-                }>BTN3</button>
+                
             </span>
         </div>
     );
 }
-
 export default About;

@@ -1,4 +1,3 @@
-import AppStyle from "./App.module.css";
 import Navbar from "./components/navbar/Navbar";
 import { useRef } from "react";
 import Main from "./components/main/Main";
@@ -31,8 +30,7 @@ function App() {
         Ref={aboutRef}
         style={{
           backgroundImage:
-            "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/introBackground.jpg?alt=media&token=5ec81f2f-4add-476c-a524-b11d99245c12)",
-          zIndex: "-1",
+            "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/introBackground.jpg?alt=media&token=5ec81f2f-4add-476c-a524-b11d99245c12)"
         }}
         content={<About/>}
       />

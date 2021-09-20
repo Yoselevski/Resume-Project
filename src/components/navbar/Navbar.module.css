@@ -28,8 +28,3 @@ li button {
 li button:hover {
     background-color: darkcyan;
 }
-
-li button :active {
-    background-color: rgb(131, 248, 115);
-    color: black;
-}
