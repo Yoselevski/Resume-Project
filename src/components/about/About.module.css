@@ -1,9 +1,10 @@
 
+
 .splitLeft {
     height: 40%;
     width: 40%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     padding-top: 20px;
     z-index: 1;
 
@@ -30,9 +31,10 @@
     height: fit-content;
     overflow: hidden;
     margin-bottom: 5px;
-    font-size: 36px;
-    color: snow;
+    font-size: 50px;
+    color: rgb(221, 216, 216);
     text-align: center;
+    font-family: 'Dosis', sans-serif;
 }
 
 .subHeadlineContainer {
@@ -45,14 +47,37 @@
     height: fit-content;
     overflow: hidden;
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 30px;
     color: snow;
     text-align: center;
+    font-family: 'Dosis', sans-serif;
+
 }
 @media screen and (max-width: 700px) {
     .subHeadlineContainer{
         color: transparent;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .headlineContainer {
+        font-size: 38px;
         
+    }
+
+    .splitLeft {
+        top: 20%;
+        width: 50%;
+        transform: translateX(55%);
+
+    }
+    .splitRight {
+        top: 45%;
+        width: 90%;
+
+    }
+    .hide {
+        display: none;
     }
 
 }
@@ -70,7 +95,9 @@
 .info {
     line-height: 1.5;
     font-size: 24px;
+    font-weight: bold;
     color: snow;
+    font-family: 'Dosis', sans-serif;
 
 }
 
@@ -105,4 +132,6 @@
     font-size: 19px;
     size: wrap;
 }
+
+
 

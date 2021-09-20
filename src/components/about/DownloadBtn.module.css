@@ -16,3 +16,11 @@
     background-color: rgb(218, 214, 214);
     transition: 0.7s;
 }
+
+@media screen and (max-width: 650px) {
+    .button {
+        height: 2rem;
+        
+    }
+
+}

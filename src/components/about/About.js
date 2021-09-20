@@ -2,6 +2,7 @@ import AboutStyle from "./About.module.css";
 import DownloadBtn from "./DownloadBtn";
 import {SocialIcon} from "react-social-icons";
 import {Linking} from 'react-native';
+import TypeWriterEffect from 'react-typewriter-effect';
 
 
 const About = () => {
@@ -12,18 +13,18 @@ const About = () => {
 
     return (
         <div>
-
             <span id="headline-container"
                 className={
                     AboutStyle.headlineContainer
             }>
-                I am a software developer
+                <strong>I am Sahar Cohen
+                </strong>
             </span>
             <span id="sub-headline-container"
                 className={
                     AboutStyle.subHeadlineContainer
             }>
-                Let me tell you a little about myself
+                <p>A softwer developer</p>
             </span>
             <span id="split-screen-left"
                 className={
@@ -35,6 +36,7 @@ const About = () => {
                             AboutStyle.image
                         }/>
                 </div>
+                <div className={AboutStyle.hide}> 
                 <button className={
                         AboutStyle.whatsapp
                     }
@@ -42,8 +44,10 @@ const About = () => {
                     <strong>Contact me</strong>
                     {
                     < SocialIcon
-                    fgColor = "snow" url = "https://api.whatsapp.com/send?phone=972537171929" style = {{zIndex:"-10", float: "left"}}/>
+                    fgColor = "snow" url = "https://api.whatsapp.com/send?phone=972537171929" style = {{zIndex:"-10", float: "left"}}
+                    />
                 }</button>
+                </div>
             </span>
             <span id="split-screen-right"
                 className={
@@ -52,9 +56,20 @@ const About = () => {
                 <div id="info-container">
                     <p className={
                         AboutStyle.info
-                    }>Third year student, BSC in Computer Sciences. Looking for an entry level position as a developer, in which I
-                    can both contribute and evolve professionally.
-                    
+                    }>
+                        <TypeWriterEffect textStyle={
+                                {
+                                    fontFamily: "'Dosis', sans-serif",
+                                    fontSize: "24px"
+                                }
+                            }
+                            startDelay={300}
+                            cursorColor="black"
+                            text="Third year student, BSC in Computer Sciences. Looking for an entry level position as a developer, in which I
+                                                    can both contribute and evolve professionally."
+                            typeSpeed={80}/>
+
+
                     </p>
                 </div>
             </span>
@@ -63,7 +78,7 @@ const About = () => {
                     AboutStyle.footerContainer
             }>
                 <DownloadBtn/>
-                
+
             </span>
         </div>
     );
