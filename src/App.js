@@ -5,6 +5,8 @@ import { SocialIcon } from "react-social-icons";
 import Main from "./components/main/Main";
 import ProjectsCard from "./components/projects_card/ProjectsCard";
 import ProjectsStyle from "./Projects.module.css";
+import FooterStyle from "./components/main/Footer.module.css";
+
 import Footer from "./components/main/Footer";
 
 function App() {
@@ -45,19 +47,12 @@ function App() {
       />
       <Main
         Ref={projectsRef}
-<<<<<<< HEAD
         style={{ backgroundColor: "red", zIndex: "-1" }}
         content={
           <div>
             <div className={ProjectsStyle.projectsHeadline}>
               Favorite Projects
             </div>
-=======
-        style={{ backgroundColor: "red", zIndex: '-1'}}
-        content= {
-          <div style={{}}>
-            <div className={ProjectsStyle.projectsHeadline}>Favorite Projects</div>
->>>>>>> 6f3b4a7255c36bd6167dd9fd61cfa537bffb0f2a
             <div className={ProjectsStyle.projectsContainer}>
               <ul className={ProjectsStyle.ulCards}>
                 <li className={ProjectsStyle.liCards}>
@@ -71,7 +66,7 @@ function App() {
                 </li>
               </ul>
             </div>
-            <Footer />
+              <Footer />
           </div>
         }
       />

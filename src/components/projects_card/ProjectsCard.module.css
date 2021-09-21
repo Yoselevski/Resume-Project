@@ -5,6 +5,7 @@
     border: 1px solid #5e31db;
     perspective: 1000px;
     border-radius: 25px;
+    margin-right:3rem;
   }
   
   /* This container is needed to position the front and back side */
@@ -35,7 +36,7 @@
   
   /* Style the front side (fallback if image is missing) */
   .flipCardFront {
-    background-color: #bbb;
+    background-color: rgb(138, 153, 140);
     color: black;
   }
   
