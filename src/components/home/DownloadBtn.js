@@ -8,7 +8,7 @@ const DownloadBtn = () => {
     }
     return (
         <button className={DownloadBtnStyle.button} onClick={downloadFile} >
-            <strong>Download my resume</strong>
+            Download my resume
         </button>
     )
 }

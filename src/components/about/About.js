@@ -1,8 +1,10 @@
 import AboutStyle from "./About.module.css";
-import DownloadBtn from "./DownloadBtn";
+import DownloadBtn from "../home/DownloadBtn";
 import {SocialIcon} from "react-social-icons";
 import {Linking} from 'react-native';
 import TypeWriterEffect from 'react-typewriter-effect';
+import WhyMeStyle from "../whyMe/WhyMe.module.css";
+
 
 
 const About = () => {
@@ -13,19 +15,11 @@ const About = () => {
 
     return (
         <div>
-            <span id="headline-container"
-                className={
-                    AboutStyle.headlineContainer
-            }>
-                <strong>I am Sahar Cohen
-                </strong>
-            </span>
-            <span id="sub-headline-container"
-                className={
-                    AboutStyle.subHeadlineContainer
-            }>
-                <p>A softwer developer</p>
-            </span>
+        <div className={WhyMeStyle.headlineContainer}>
+            <div className={WhyMeStyle.headlineText}>about me</div>
+            <div className={WhyMeStyle.headlineUnderline}/>
+        </div>
+            
             <span id="split-screen-left"
                 className={
                     AboutStyle.splitLeft
@@ -77,7 +71,6 @@ const About = () => {
                 className={
                     AboutStyle.footerContainer
             }>
-                <DownloadBtn/>
 
             </span>
         </div>

@@ -17,56 +17,14 @@
     z-index: 1;
     top: 25%;
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 10px;
 
 }
 
-.headlineContainer {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 70%;
-    height: fit-content;
-    overflow: hidden;
-    margin-bottom: 5px;
-    font-size: 50px;
-    color: rgb(221, 216, 216);
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-}
+@media screen and (max-width: 600px) {
 
-.subHeadlineContainer {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 70%;
-    height: fit-content;
-    overflow: hidden;
-    margin-bottom: 5px;
-    font-size: 30px;
-    color: snow;
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-
-}
-@media screen and (max-width: 700px) {
-    .subHeadlineContainer{
-        color: transparent;
-    }
-
-}
-@media screen and (max-width: 650px) {
-    .headlineContainer {
-        font-size: 38px;
-        
-    }
 
     .splitLeft {
-        top: 20%;
         width: 50%;
         transform: translateX(55%);
 

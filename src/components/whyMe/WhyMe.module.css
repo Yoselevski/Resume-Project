@@ -1,0 +1,58 @@
+
+.text {
+    position: absolute;
+    width: 20%;
+    right: 0%;
+    color: snow;
+    font-family:'Times New Roman', Times, serif;
+}
+.headlineContainer {
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.headlineText {
+    color: snow;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2rem;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 1;
+    margin-bottom: 0.8rem;
+}
+.headlineUnderline {
+    border: 1px solid thistle;
+    bottom: 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentContainer {
+    position: absolute;
+    width: 600px;
+    height: 70vh;
+    margin-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border: 1px solid thistle;
+}
+
+@media screen and (max-width: 800px) {
+    .headlineText{
+        font-size: 26px;
+    }
+    .contentContainer {
+        width: 400px;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .headlineText{
+        font-size: 22px;
+    }
+}
