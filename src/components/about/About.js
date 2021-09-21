@@ -36,7 +36,7 @@ const About = () => {
                             AboutStyle.image
                         }/>
                 </div>
-                <div className={AboutStyle.hide}> 
+                {/* <div className={AboutStyle.hide}> 
                 <button className={
                         AboutStyle.whatsapp
                     }
@@ -47,7 +47,7 @@ const About = () => {
                     fgColor = "snow" url = "https://api.whatsapp.com/send?phone=972537171929" style = {{zIndex:"-10", float: "left"}}
                     />
                 }</button>
-                </div>
+                </div> */}
             </span>
             <span id="split-screen-right"
                 className={
