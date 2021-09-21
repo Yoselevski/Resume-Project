@@ -1,0 +1,94 @@
+
+.headlineContainer {
+    position: absolute;
+    top: 30%;
+    float: left;
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 0;
+    padding-left: 0%;
+}
+
+.subHeadlineContainer {
+    position: absolute;
+    top: 50%;
+    float: left;
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-size: 26px;
+    color: rgb(211, 208, 208);
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.btns {
+    position: absolute;
+    float: left;
+    margin-left: 170px;
+    top: 75%;
+    background-color: transparent;
+    width: 50%;
+    height: fit-content;
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 50px;
+}
+.li {
+    float: left;
+    padding: 5px;
+}
+
+.btn {
+    position: absolute;
+    background-color: transparent;
+    border:0.5px solid whitesmoke;
+    left: 210px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 2px;
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+    color: whitesmoke;
+    overflow: hidden;
+}
+.btn:hover {
+    background-color: rgb(161, 160, 160);
+    transition: 0.7s;
+}
+
+
+@media screen and (max-width: 750px) {
+    .headlineContainer {
+        font-size: 70px;
+        width: 100%;
+        float: none;
+    }
+    .subHeadlineContainer {
+        width: 100%;
+        float: none;
+        color: rgb(243, 240, 240);
+    }
+
+    .btns {
+        float: none;
+        margin-left: 25%;
+    }
+
+}

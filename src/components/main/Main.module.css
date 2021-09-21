@@ -6,13 +6,4 @@
     max-height: none;
     z-index: -1;
   }
-  .content {
-    position: absolute;
-    text-align: center;
-    font-size: x-large;
-    font-family: 'Dosis', sans-serif;
-    color: white;
-    margin-top: 6rem;
-    margin-left: 3rem;
-    margin-bottom: 1rem;
-  }
+  

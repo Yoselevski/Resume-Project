@@ -1,25 +1,28 @@
-import AppStyle from "./App.module.css";
 import Navbar from "./components/navbar/Navbar";
 import { useRef } from "react";
-import { SocialIcon } from "react-social-icons";
 import Main from "./components/main/Main";
 import ProjectsCard from "./components/projects_card/ProjectsCard";
 import ProjectsStyle from "./Projects.module.css";
-import FooterStyle from "./components/main/Footer.module.css";
-
 import Footer from "./components/main/Footer";
+import About from "./components/about/About";
+import MainFooter from "./main_footer/MainFooter";
+import WhyMe from "./components/whyMe/WhyMe";
+import Home from "./components/home/Home";
 
 function App() {
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
   const whyMeRef = useRef(null);
+  const homeRef = useRef(null);
 
   const scrolToView = (sectionName) => {
     const myRef =
       sectionName === "about"
         ? aboutRef
         : sectionName === "projects"
-        ? projectsRef
+        ? projectsRef 
+        : sectionName === "home"
+        ? homeRef
         : whyMeRef;
 
     window.scrollTo({
@@ -32,18 +35,44 @@ function App() {
     <div>
       <Navbar scrolTo={scrolToView} />
       <Main
+        Ref={homeRef}
+        style={{
+          backgroundImage:
+            "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/Home%20bg.jpg?alt=media&token=8b1d3afd-0b35-41e3-8eec-5f62e0c51220)",
+            backgroundPositionX: "right",
+            backgroundPositionY: "center",
+            backgroundSize: "cover",
+            }}
+        content={<Home/>}
+      />
+      <Main
         Ref={aboutRef}
         style={{
           backgroundImage:
             "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/introBackground.jpg?alt=media&token=5ec81f2f-4add-476c-a524-b11d99245c12)",
-          zIndex: "-1",
-        }}
-        content="Picture of us + Flip card"
+            backgroundPositionX: "right",
+            backgroundPositionY: "center",
+            backgroundSize: "cover",
+            backgroundRepeatX: "no-repeat",
+            backgroundRepeatY: "no-repeat",
+            backgroundAttachment: "initial",
+            backgroundOrigin: "initial",
+            backgroundClip: "initial",
+            backgroundColor: "initial"
+            }}
+        content={<About/>}
       />
       <Main
         Ref={whyMeRef}
-        style={{ backgroundColor: "green", zIndex: "-1" }}
-        content="Why me"
+        style={{ backgroundImage: "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/coding%20man.jpg?alt=media&token=e9cf1388-0c2a-4c8b-b6e5-63e7d3b14f10)",
+        backgroundPositionX: "right",
+        backgroundPositionY: "bottom",
+        backgroundClip: "content-box",
+        backgroundSize:"200px 200px",
+        backgroundRepeat: "no-repeat",
+        backgroundColor:"rgba(3,3,3, 0.89)",
+         }}
+        content={<WhyMe/>}
       />
       <Main
         Ref={projectsRef}
@@ -70,26 +99,8 @@ function App() {
           </div>
         }
       />
-
-      <footer className={AppStyle.footer}>
-        <div className={AppStyle.footerContent}>
-          Copyright © 2021. All Rights Reserved
-        </div>
-        <ul className={AppStyle.ul}>
-          <li className={AppStyle.li} title="to github">
-            <SocialIcon
-              url="https://github.com/saharc576?tab=repositories"
-              style={{ float: "right" }}
-            />
-          </li>
-          <li className={AppStyle.li} title="to linkdin">
-            <SocialIcon
-              url="https://www.linkedin.com/in/sahar-cohen-307020207/"
-              style={{ float: "right" }}
-            />
-          </li>
-        </ul>
-      </footer>
+    <MainFooter />
+      
     </div>
   );
 }
