@@ -1,5 +1,5 @@
 import CardStyle from "./ProjectsCard.module.css";
-import OldMan from '../pictures/React.png';
+import OldMan from '../pictures/Oldman.png';
 
 const ProjectsCard = ({
   HeaderP1,
@@ -15,7 +15,7 @@ const ProjectsCard = ({
         <div className={CardStyle.flipCardFront}>
           <h2>{HeaderP1}</h2>
           <p>{HeaderP2}</p>
-          <img src={OldMan}></img>
+          <img src={OldMan} width="50"></img>
         </div>
         <div className={CardStyle.flipCardBack}>
           <h1>{subject}</h1>

@@ -1,4 +1,4 @@
-import ItemPic from "../pictures/ItemPic";
+import ItemPic from "./ItemPic";
 import ProjectsFooterStyle from "./ProjectsFooter.module.css";
 
 const ItemsPic = [

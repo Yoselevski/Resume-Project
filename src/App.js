@@ -76,7 +76,7 @@ function App() {
         Ref={projectsRef}
         style={{
           backgroundImage:
-            "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/jhoni%20bg.jpeg?alt=media&token=f9b30422-220b-400d-837e-48b08684f360)",
+            "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/bg%20prog.jpg?alt=media&token=e524689b-3a86-43a1-aab6-62a618400e19)",
           backgroundPositionX: "left",
           backgroundPositionY: "top",
           backgroundClip: "content-box",
