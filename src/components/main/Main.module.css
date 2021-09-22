@@ -1,9 +1,7 @@
 .container {
-   
+    position: relative;
     width: 100vh;
     min-width: 100%;
-    min-height: 100vh;
-    max-height: none;
-    z-index: -1;
+    height: 100vh;
+    
   }
-  

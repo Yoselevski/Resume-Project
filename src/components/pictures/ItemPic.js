@@ -1,4 +1,3 @@
-import classes from './ItemPic.module.css';
 import React from 'react';
 const ItemPic = ({ Link, alt, width, height, Checking }) => {
    // const x=React.lazy(()=>import(Link));
