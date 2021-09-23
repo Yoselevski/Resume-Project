@@ -1,20 +1,30 @@
-import CardStyle from './ProjectsCard.module.css'
+import CardStyle from "./ProjectsCard.module.css";
+import OldMan from '../pictures/Oldman.png';
 
-const ProjectsCard = () => {
-    return (
-        <div className={CardStyle.flipCard}>
-            <div className={CardStyle.flipCardInner}>
-                <div className={CardStyle.flipCardFront}>
-                asdgfasdfga
-                </div>
-                <div className={CardStyle.flipCardBack}>
-                    <h1>John Doe</h1>
-                    <p>Architect  Engineer</p>
-                    <p>We love that guy</p>
-                </div>
-            </div>
+const ProjectsCard = ({
+  HeaderP1,
+  HeaderP2,
+  subject,
+  content,
+  message,
+  img,
+}) => {
+  return (
+    <div className={CardStyle.flipCard}>
+      <div className={CardStyle.flipCardInner}>
+        <div className={CardStyle.flipCardFront}>
+          <h2>{HeaderP1}</h2>
+          <p>{HeaderP2}</p>
+          <img src={OldMan} width="50"></img>
         </div>
-    );
-}
+        <div className={CardStyle.flipCardBack}>
+          <h1>{subject}</h1>
+          <p>{content}</p>
+          <p>{message}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default ProjectsCard;
