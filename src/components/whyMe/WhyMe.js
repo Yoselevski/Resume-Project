@@ -38,9 +38,8 @@ const WhyMe = () => {
                 {pressedNum>=2 && <button onClick={() => setShowModal(2)} className={WhyMeStyle.btnDown}>DOWN</button>}
             </span>
         </span>
-        <span>
+        <span className={WhyMeStyle.forPhone}>
             <button onClick={pressHandler} className={WhyMeStyle.btn}>PRESS TO FIND OUT</button>
-            
         </span>
         <span className={WhyMeStyle.colRight}>
             <span className={WhyMeStyle.rightContainer}>

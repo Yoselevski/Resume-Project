@@ -16,7 +16,6 @@ const QualityModal = ({content, setShowModal}) => {
                 <span onClick={() => setShowModal(0)} className={ModalStyle.close}>&times;</span>
                 <p>{content}</p>
             </div>
-
         </div>
     );
 }

@@ -23,7 +23,7 @@ function App() {
         ? homeRef
         : whyMeRef;
 
-    window.scrollTo({ top: myRef.current.offsetTop, behavior: "smooth" });
+    window.scrollTo({ top: myRef.current.offsetTop, behavior: "smooth"});
   };
 
     return (<div>
