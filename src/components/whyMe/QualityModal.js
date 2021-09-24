@@ -1,6 +1,6 @@
 import ModalStyle from './QualityModal.module.css'
 
-const QualityModal = ({content, setShowModal}) => {
+const QualityModal = ({headline, content, setShowModal}) => {
     
     
     window.onclick = function(event) {
@@ -14,6 +14,7 @@ const QualityModal = ({content, setShowModal}) => {
 
             <div className={ModalStyle.modalContent}>
                 <span onClick={() => setShowModal(0)} className={ModalStyle.close}>&times;</span>
+                <h1>{headline}</h1>
                 <p>{content}</p>
             </div>
         </div>
