@@ -1,14 +1,25 @@
 
-.headlineContainer {
+.allContainer {
+    height: fit-content;
+    width: fit-content;
     position: absolute;
-    top: 30%;
-    float: left;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin-top: 25%;
     text-align: center;
-    width: 70%;
+    width: 50%;
+
+}
+
+.headlineContainer {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    width: 11ch;
     height: fit-content;
     overflow: hidden;
     margin-bottom: 5px;
-    font-size: 80px;
+    font-size: 75px;
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Dosis', sans-serif;
@@ -17,9 +28,8 @@
 }
 
 .subHeadlineContainer {
-    position: absolute;
+    position: relative;
     top: 50%;
-    float: left;
     text-align: center;
     width: 70%;
     height: fit-content;
@@ -33,19 +43,18 @@
 }
 
 .btns {
-    position: absolute;
-    float: left;
-    margin-left: 170px;
-    top: 75%;
+    position: relative;
+    margin-left: 10px;
     background-color: transparent;
-    width: 50%;
+    width: 100%;
     height: fit-content;
+    float: left;
+    
 }
 .ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     height: 50px;
 }
 .li {
@@ -54,19 +63,15 @@
 }
 
 .btn {
-    position: absolute;
     background-color: transparent;
     border:0.5px solid whitesmoke;
-    left: 210px;
     width: 200px;
     height: 40px;
     border-radius: 10px;
     padding: 2px;
-    display: block;
     z-index: 10;
     cursor: pointer;
     color: whitesmoke;
-    overflow: hidden;
 }
 .btn:hover {
     background-color: rgb(161, 160, 160);
@@ -74,7 +79,15 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 870px) {
+    .allContainer {
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 20%;
+        left: 50%;
+        width: 100%;
+    }
+    
+
     .headlineContainer {
         font-size: 70px;
         width: 100%;
@@ -87,8 +100,28 @@
     }
 
     .btns {
-        float: none;
-        margin-left: 25%;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        transform: translateX(20%);
     }
+
+}
+
+.modal {
+    z-index: 100;
+}
+
+@media screen and (max-width: 550px) {
+    .btns {
+        
+        transform: translateX(25%);
+    }
+
+    .allContainer {
+        margin-top: 45%;
+    }
+
+
 
 }

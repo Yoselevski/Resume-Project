@@ -57,7 +57,6 @@ function App() {
         <Main Ref={whyMeRef}
             style={
                 {
-                    // backgroundImage: "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/coding%20man.jpg?alt=media&token=e9cf1388-0c2a-4c8b-b6e5-63e7d3b14f10)",
                     backgroundPositionX: "right",
                     backgroundPositionY: "bottom",
                     backgroundClip: "content-box",

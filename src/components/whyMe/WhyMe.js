@@ -1,17 +1,12 @@
-import { useContext, useState } from 'react';
-import TypeWriterEffect from 'react-typewriter-effect';
+import { useState } from 'react';
 import WhyMeStyle from "./WhyMe.module.css";
-import QualityModal from './QualityModal'
+import QualityModal from '../modal/Modal';
 
 const WhyMe = () => {
 
     const numOfQualities = 4;
     const [pressedNum, setPressedNum] = useState(0);
     const [showModal, setShowModal] = useState(0);
-
-    const circleHandler = (circleNumber) => {
-        
-    }
 
     const pressHandler = () => {
        if (pressedNum === numOfQualities) {

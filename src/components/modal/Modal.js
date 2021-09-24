@@ -1,6 +1,6 @@
-import ModalStyle from './QualityModal.module.css'
+import ModalStyle from './Modal.module.css'
 
-const QualityModal = ({headline, content, setShowModal}) => {
+const Modal = ({headline, content, setShowModal}) => {
     
     
     window.onclick = function(event) {
@@ -21,4 +21,4 @@ const QualityModal = ({headline, content, setShowModal}) => {
     );
 }
 
-export default QualityModal;
+export default Modal;
