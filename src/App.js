@@ -31,10 +31,16 @@ function App() {
         <Main Ref={homeRef}
             style={
                 {
-                    backgroundImage: "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/Home%20bg.jpg?alt=media&token=8b1d3afd-0b35-41e3-8eec-5f62e0c51220)",
+                    background: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/Home%20bg.jpg?alt=media&token=8b1d3afd-0b35-41e3-8eec-5f62e0c51220)",
                     backgroundPositionX: "right",
                     backgroundPositionY: "center",
-                    backgroundSize: "cover"
+                    backgroundSize: "cover",
+                    backgroundRepeatX: "no-repeat",
+                    backgroundRepeatY: "no-repeat",
+                    backgroundAttachment: "initial",
+                    backgroundOrigin: "initial",
+                    backgroundClip: "initial",
+                    backgroundColor: "initial"
                 }
             }
             content={<Home/>}/>

@@ -78,6 +78,17 @@
     transition: 0.7s;
 }
 
+.modalBtn {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50px;
+
+}
+.modalBtn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.7s;
+}
 
 @media screen and (max-width: 870px) {
     .allContainer {
