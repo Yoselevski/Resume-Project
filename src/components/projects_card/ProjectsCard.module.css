@@ -1,7 +1,7 @@
 .flipCard {
   background-color: transparent;
   width: 40vh;
-  height: 50vh;
+  height: 55vh;
   border: 1px solid #5e31db;
   perspective: 1000px;
   border-radius: 25px;
@@ -36,21 +36,54 @@
 
 /* Style the front side (fallback if image is missing) */
 .flipCardFront {
-  background-color: rgb(138, 153, 140);
+  background-color: rgb(198, 83, 140);
   color: black;
   text-align: center;
   align-content: center;
-
-  /* width: 70px;
-  height: 300px;
-  border: 1px solid #c3c3c3;
-  display: flex;
-  flex-wrap: wrap;  */
 }
 
 /* Style the back side */
 .flipCardBack {
-  background-color: dodgerblue;
+  background-color: #383838;
   color: white;
   transform: rotateY(180deg);
+}
+
+.buttonContainer {
+  position: fixed;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  width: 80%;
+  border: 1px solid white;
+}
+
+.imgFront {
+  margin-top: 20%;
+}
+
+.button {
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  transition: 0.4s;
+  background-color: #6fd448;
+}
+
+@media screen and (max-width: 920px) {
+
+  .flipCard {
+    width: 100vh;
+    height: 40vh;
+    margin-bottom: 8px;
+  }
+  .imgFront {
+    margin-top: 0%;
+  }
+
+
 }

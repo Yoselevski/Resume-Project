@@ -1,10 +1,3 @@
-.text {
-    position: absolute;
-    width: 20%;
-    right: 0%;
-    color: snow;
-    font-family:'Times New Roman', Times, serif;
-}
 .headlineContainer {
     position: absolute;
     margin-top: 50px;
@@ -30,7 +23,6 @@
     margin-right: auto;
 }
 
-
 .projectsHeadline {
     text-align: center;
     padding-top: 9%;
@@ -41,12 +33,11 @@
   }
   
   .projectsContainer {
-    margin-top: 0;
     display: grid;
-    margin-bottom: 20px;
     z-index: 1;
-    border: solid black;
     overflow: hidden;
+    gap: 2.5rem;
+    justify-content: space-around;        
   }
 
   .projectsFooter {
@@ -62,12 +53,33 @@
     list-style-type: none;
     height: 100%;
     max-width: 100%;
-    margin-top:10%;
-    justify-content: space-between;
-    display: inline-flex;
+    margin-top:12%;
   }
   
   .liCards {
     height: fit-content;
     width: fit-content;
+    margin: 15px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+
+  @media screen and (max-width: 920px) {
+    
+    .headlineText {
+      font-size: 26px;
+    }
+    
+    .ulCards {
+      z-index: 1;
+      list-style-type: none;
+      height: 100%;
+      max-width: 100%;
+      margin-top:12%;
+    }
+
+    .liCards {
+      float: none;
+    }
+
   }

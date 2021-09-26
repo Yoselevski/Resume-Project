@@ -25,8 +25,10 @@ function App() {
 
     window.scrollTo({ top: myRef.current.offsetTop, behavior: "smooth"});
   };
+  
 
-    return (<div>
+    return (
+    <div>
         <Navbar scrolTo={scrolToView}/>
         <Main Ref={homeRef}
             style={
@@ -56,7 +58,7 @@ function App() {
                     backgroundAttachment: "initial",
                     backgroundOrigin: "initial",
                     backgroundClip: "initial",
-                    backgroundColor: "initial"
+                    backgroundColor: "initial",
                 }
             }
             content={<About/>}/>
@@ -77,18 +79,15 @@ function App() {
         Ref={projectsRef}
         style={{
           backgroundImage:
-            "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/bg%20prog.jpg?alt=media&token=e524689b-3a86-43a1-aab6-62a618400e19)",
+            "url(https://firebasestorage.googleapis.com/v0/b/web-resume-a9953.appspot.com/o/projects%20bg.png?alt=media&token=7183d970-247f-4117-bbca-ddcd48ec22f9)",
           backgroundPositionX: "left",
           backgroundPositionY: "top",
           backgroundClip: "content-box",
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "rgba(3,3,3, 0.89)",
-          
-        
-
+          backgroundSize: "180%",
         }}
-        content={<Projects/>}/>
+        content={<Projects/>}
+        projects={true}
+        />
       
       <MainFooter />
     </div>

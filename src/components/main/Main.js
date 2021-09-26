@@ -1,9 +1,11 @@
 import MainStyle from './Main.module.css';
-const Main = ({Ref , style , content}) => {
+const Main = ({Ref , style , content, projects}) => {
+
+  const class_style = projects? MainStyle.projectsContainer :MainStyle.container;
   return (
     <div
       ref={Ref}
-      className={MainStyle.container}
+      className={class_style}
       style={style}
     >
       {content}

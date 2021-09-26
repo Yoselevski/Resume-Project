@@ -1,17 +1,9 @@
 import AboutStyle from "./About.module.css";
-import DownloadBtn from "../home/DownloadBtn";
-import {SocialIcon} from "react-social-icons";
-import {Linking} from 'react-native';
 import TypeWriterEffect from 'react-typewriter-effect';
 import WhyMeStyle from "../whyMe/WhyMe.module.css";
 
 
-
 const About = () => {
-
-    const contact = () => {
-        Linking.openURL("https://api.whatsapp.com/send?phone=972537171929");
-    }
 
     return (
         <div>
@@ -30,18 +22,6 @@ const About = () => {
                             AboutStyle.image
                         }/>
                 </div>
-                {/* <div className={AboutStyle.hide}> 
-                <button className={
-                        AboutStyle.whatsapp
-                    }
-                    onClick={contact}>
-                    <strong>Contact me</strong>
-                    {
-                    < SocialIcon
-                    fgColor = "snow" url = "https://api.whatsapp.com/send?phone=972537171929" style = {{zIndex:"-10", float: "left"}}
-                    />
-                }</button>
-                </div> */}
             </span>
             <span id="split-screen-right"
                 className={
