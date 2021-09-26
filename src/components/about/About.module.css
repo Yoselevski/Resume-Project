@@ -10,7 +10,7 @@
 
 }
 .splitRight {
-    height: 50%;
+    height: 55%;
     width: 68%;
     right: 0;
     position: absolute;
@@ -49,6 +49,11 @@
     border-radius: 50%;
     transform: translateX(-15%);
 }  
+
+.image:hover {
+    width: 60%;
+    transition: 0.5s;
+}
 
 .info {
     line-height: 1.5;

@@ -38,9 +38,25 @@ const About = () => {
                                 }
                             }
                             startDelay={300}
-                            cursorColor="black"
-                            text="Third year student, BSC in Computer Sciences. Looking for an entry level position as a developer, in which I
-                                                    can both contribute and evolve professionally."
+                            cursorColor="white"
+                            text="I am a third (and last) year student at Ben Gurion Unevirsity.
+                            I am looking for a student position as a softwear developer, or a web developer.
+                            "
+                            typeSpeed={80}
+                            hideCursorAfterText={true}/>
+
+                        <TypeWriterEffect textStyle={
+                                {
+                                    fontFamily: "'Dosis', sans-serif",
+                                    fontSize: "24px",
+                                    color: "rgb(204, 204, 204)"
+                                }
+                            }
+                            startDelay={14300}
+                            cursorColor="white"
+                            text="During my studies I gained expirience in many languages, and currently I 
+                            am mostly interested in JS and TS.
+                            I am eager to learn and willing to put up the work for that."
                             typeSpeed={80}/>
 
 
@@ -51,7 +67,6 @@ const About = () => {
                 className={
                     AboutStyle.footerContainer
             }>
-
             </span>
         </div>
     );
